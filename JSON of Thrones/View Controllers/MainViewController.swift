@@ -25,18 +25,20 @@ class MainViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? CharacterTableViewCell else { return UITableViewCell() }
         let character = characters[indexPath.row]
-        cell.textLabel?.text = character.fullName
-
-        DispatchQueue.global().async {
-            guard let stringUrl = character.imageUrl else { return }
-            guard let imageUrl = URL(string: stringUrl) else { return }
-            guard let imageData = try? Data(contentsOf: imageUrl) else { return }
-            DispatchQueue.main.async {
-                cell.imageView?.image = UIImage(data: imageData)
-            }
-        }
+        cell.configure(with: character)
+        
+//        cell.textLabel?.text = character.fullName
+//
+//        DispatchQueue.global().async {
+//            guard let stringUrl = character.imageUrl else { return }
+//            guard let imageUrl = URL(string: stringUrl) else { return }
+//            guard let imageData = try? Data(contentsOf: imageUrl) else { return }
+//            DispatchQueue.main.async {
+//                cell.imageView?.image = UIImage(data: imageData)
+//            }
+//        }
 
         return cell
     }
