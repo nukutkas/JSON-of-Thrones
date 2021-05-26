@@ -60,17 +60,65 @@
 		E5CD354F264D5020000E9BF6 /* JSON of Thrones */ = {
 			isa = PBXGroup;
 			children = (
-				E5CD3550264D5020000E9BF6 /* AppDelegate.swift */,
-				E5CD3552264D5020000E9BF6 /* SceneDelegate.swift */,
-				E5CD356E264D5A1D000E9BF6 /* MainViewController.swift */,
-				E5CD3572264D7C86000E9BF6 /* NetworkManager.swift */,
-				E5CD3565264D5096000E9BF6 /* Character.swift */,
-				E5CD3556264D5020000E9BF6 /* Main.storyboard */,
-				E5CD3559264D5021000E9BF6 /* Assets.xcassets */,
-				E5CD355B264D5021000E9BF6 /* LaunchScreen.storyboard */,
-				E5CD355E264D5021000E9BF6 /* Info.plist */,
+				E5EFE52F265ECF2900D607FF /* Model */,
+				E5EFE531265ECF3500D607FF /* View Controllers */,
+				E5EFE533265ECF3D00D607FF /* Services */,
+				E5EFE52D265ECF1300D607FF /* Storyboards */,
+				E5EFE52C265ECEFB00D607FF /* Supporting Files */,
+				E5EFE52E265ECF1D00D607FF /* Sources */,
 			);
 			path = "JSON of Thrones";
+			sourceTree = "<group>";
+		};
+		E5EFE52C265ECEFB00D607FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5CD3550264D5020000E9BF6 /* AppDelegate.swift */,
+				E5CD3552264D5020000E9BF6 /* SceneDelegate.swift */,
+				E5CD355E264D5021000E9BF6 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5EFE52D265ECF1300D607FF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E5CD3556264D5020000E9BF6 /* Main.storyboard */,
+				E5CD355B264D5021000E9BF6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E5EFE52E265ECF1D00D607FF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E5CD3559264D5021000E9BF6 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E5EFE52F265ECF2900D607FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5CD3565264D5096000E9BF6 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5EFE531265ECF3500D607FF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E5CD356E264D5A1D000E9BF6 /* MainViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E5EFE533265ECF3D00D607FF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E5CD3572264D7C86000E9BF6 /* NetworkManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4HK5Y82J4;
-				INFOPLIST_FILE = "JSON of Thrones/Info.plist";
+				INFOPLIST_FILE = "JSON of Thrones/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z4HK5Y82J4;
-				INFOPLIST_FILE = "JSON of Thrones/Info.plist";
+				INFOPLIST_FILE = "JSON of Thrones/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
