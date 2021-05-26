@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E58B59F0265ED59A0016AD68 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B59EF265ED59A0016AD68 /* CharacterTableViewCell.swift */; };
 		E5CD3551264D5020000E9BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD3550264D5020000E9BF6 /* AppDelegate.swift */; };
 		E5CD3553264D5020000E9BF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD3552264D5020000E9BF6 /* SceneDelegate.swift */; };
 		E5CD3558264D5020000E9BF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CD3556264D5020000E9BF6 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E58B59EF265ED59A0016AD68 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		E5CD354D264D5020000E9BF6 /* JSON of Thrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JSON of Thrones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CD3550264D5020000E9BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5CD3552264D5020000E9BF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E58B59EE265ED5670016AD68 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E58B59EF265ED59A0016AD68 /* CharacterTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		E5CD3544264D5020000E9BF6 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 			children = (
 				E5EFE52F265ECF2900D607FF /* Model */,
 				E5EFE531265ECF3500D607FF /* View Controllers */,
+				E58B59EE265ED5670016AD68 /* View */,
 				E5EFE533265ECF3D00D607FF /* Services */,
 				E5EFE52D265ECF1300D607FF /* Storyboards */,
 				E5EFE52C265ECEFB00D607FF /* Supporting Files */,
@@ -196,6 +207,7 @@
 				E5CD3573264D7C86000E9BF6 /* NetworkManager.swift in Sources */,
 				E5CD3566264D5096000E9BF6 /* Character.swift in Sources */,
 				E5CD356F264D5A1D000E9BF6 /* MainViewController.swift in Sources */,
+				E58B59F0265ED59A0016AD68 /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
