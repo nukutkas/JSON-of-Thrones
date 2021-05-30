@@ -16,3 +16,7 @@ struct Character: Decodable {
     let family: String
     let imageUrl: String?
 }
+
+enum URLS: String {
+    case characterApi = "https://thronesapi.com/api/v2/Characters"
+}

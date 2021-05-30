@@ -6,29 +6,33 @@
 //
 import Foundation
 
-//class NetworkManager {
-//    
-//    static let shared = NetworkManager()
-//    
-//    private let jsonURL = "https://thronesapi.com/api/v2/Characters"
-//    
-//    private init() {}
-//    
-//    func fetchData() {
-//        guard let url = URL(string: jsonURL) else { return }
-//        
-//        URLSession.shared.dataTask(with: url) { (data, _, _) in
-//            guard let data = data else { return }
-//            
-//            let decoder = JSONDecoder()
-//            
-//            do {
-//                let characters = try decoder.decode([Character].self, from: data)
-//                print(characters)
-//            } catch let error {
-//                print(error.localizedDescription)
-//            }
-//            
-//        }.resume()
-//    }
-//}
+class NetworkManager {
+    
+    static let shared = NetworkManager()
+    
+    private init() {}
+    
+    func fetchData(from url: String?, with complition: @escaping ([Character]) -> Void) {
+        guard let stringURL = url else { return }
+        guard let url = URL(string: stringURL) else { return }
+        
+        URLSession.shared.dataTask(with: url) { (data, _, error) in
+            if let error = error {
+                print(error)
+                return
+            }
+            
+            guard let data = data else { return }
+            
+            do {
+                let character = try JSONDecoder().decode([Character].self, from: data)
+                DispatchQueue.main.async {
+                    complition(character)
+                }
+            } catch let error {
+                print(error)
+            }
+            
+        }.resume()
+    }
+}

@@ -13,7 +13,7 @@ class MainViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchData()
+        fetchData(from: URLS.characterApi.rawValue)
       
        
     }
@@ -29,17 +29,6 @@ class MainViewController: UITableViewController {
         let character = characters[indexPath.row]
         cell.configure(with: character)
         
-//        cell.textLabel?.text = character.fullName
-//
-//        DispatchQueue.global().async {
-//            guard let stringUrl = character.imageUrl else { return }
-//            guard let imageUrl = URL(string: stringUrl) else { return }
-//            guard let imageData = try? Data(contentsOf: imageUrl) else { return }
-//            DispatchQueue.main.async {
-//                cell.imageView?.image = UIImage(data: imageData)
-//            }
-//        }
-
         return cell
     }
     
@@ -51,25 +40,10 @@ class MainViewController: UITableViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    func fetchData() {
-        guard let url = URL(string: jsonURL) else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, _, _) in
-            guard let data = data else { return }
-            
-            let decoder = JSONDecoder()
-            
-            do {
-                self.characters = try decoder.decode([Character].self, from: data)
-                print(self.characters)
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            } catch let error {
-                print(error.localizedDescription)
-            }
-            
-        }.resume()
+    private func fetchData(from url: String?) {
+        NetworkManager.shared.fetchData(from: url) { characters in
+            self.characters = characters
+            self.tableView.reloadData()
+        }
     }
-    
 }
