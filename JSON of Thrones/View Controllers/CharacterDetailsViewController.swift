@@ -15,8 +15,17 @@ class CharacterDetailsViewController: UIViewController {
         }
     }
     
+    // MARK: - Public properties
+    var character: Character!
+    
+    private var spinnerView = UIActivityIndicatorView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let topItem = navigationController?.navigationBar.topItem {
+            topItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        }
         
         // Do any additional setup after loading the view.
     }
