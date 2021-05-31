@@ -98,6 +98,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="nFn-bW-dnr"/>
+                    <connections>
+                        <outlet property="characterImageView" destination="IrL-Nl-gLY" id="bRD-Sa-31c"/>
+                        <outlet property="descriptionLabel" destination="wye-gK-YGH" id="X01-NR-GKk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbx-3C-WlG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
