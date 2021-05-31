@@ -7,8 +7,7 @@
 
 import UIKit
 
-class MainViewController: UITableViewController {
-    private let jsonURL = "https://thronesapi.com/api/v2/Characters"
+class CharacterTableViewController: UITableViewController {
     private var characters: [Character] = []
 
     override func viewDidLoad() {

@@ -11,7 +11,7 @@
         <!--Root View Controller-->
         <scene sceneID="bHz-KZ-Btx">
             <objects>
-                <tableViewController id="IcB-S0-W0S" customClass="MainViewController" customModule="JSON_of_Thrones" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="IcB-S0-W0S" customClass="CharacterTableViewController" customModule="JSON_of_Thrones" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2gh-Id-m9J">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
