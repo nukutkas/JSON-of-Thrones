@@ -27,7 +27,15 @@ class CharacterDetailsViewController: UIViewController {
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         }
         
-        // Do any additional setup after loading the view.
+        descriptionLabel.text = character.description
+        
+        DispatchQueue.global().async {
+            guard let imageData = ImageManager.shared.fetchImage(from: self.character.imageUrl) else { return }
+            DispatchQueue.main.async {
+                self.characterImageView.image = UIImage(data: imageData)
+               // self.spinnerView.stopAnimating()
+            }
+        }
     }
     
     
