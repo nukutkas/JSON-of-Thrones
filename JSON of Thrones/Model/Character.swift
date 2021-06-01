@@ -15,6 +15,15 @@ struct Character: Decodable {
     let title: String
     let family: String
     let imageUrl: String?
+    
+    var description: String {
+        """
+    First name: \(firstName)
+    Last name: \(lastName)
+    Title: \(title)
+    Family: \(family)
+    """
+    }
 }
 
 enum URLS: String {
