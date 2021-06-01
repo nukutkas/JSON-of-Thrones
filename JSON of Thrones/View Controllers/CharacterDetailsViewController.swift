@@ -11,6 +11,7 @@ class CharacterDetailsViewController: UIViewController {
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var characterImageView: UIImageView! {
         didSet {
+            characterImageView.contentMode = .scaleAspectFill
             characterImageView.layer.cornerRadius = characterImageView.frame.width / 2
         }
     }
@@ -26,7 +27,7 @@ class CharacterDetailsViewController: UIViewController {
         if let topItem = navigationController?.navigationBar.topItem {
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         }
-        
+        title = character.fullName
         descriptionLabel.text = character.description
         
         DispatchQueue.global().async {
