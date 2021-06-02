@@ -10,6 +10,7 @@
 		E58407E926656D6500B448BB /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58407E826656D6500B448BB /* CharacterDetailsViewController.swift */; };
 		E58796A4266809650026DD53 /* Screenshot01.png in Resources */ = {isa = PBXBuildFile; fileRef = E58796A2266809650026DD53 /* Screenshot01.png */; };
 		E58796A5266809650026DD53 /* Screenshot02.png in Resources */ = {isa = PBXBuildFile; fileRef = E58796A3266809650026DD53 /* Screenshot02.png */; };
+		E58796A826680AC20026DD53 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E58796A726680AC20026DD53 /* README.md */; };
 		E58B59F0265ED59A0016AD68 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58B59EF265ED59A0016AD68 /* CharacterTableViewCell.swift */; };
 		E5CD3551264D5020000E9BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD3550264D5020000E9BF6 /* AppDelegate.swift */; };
 		E5CD3553264D5020000E9BF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD3552264D5020000E9BF6 /* SceneDelegate.swift */; };
@@ -25,6 +26,7 @@
 		E58407E826656D6500B448BB /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
 		E58796A2266809650026DD53 /* Screenshot01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot01.png; sourceTree = "<group>"; };
 		E58796A3266809650026DD53 /* Screenshot02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Screenshot02.png; sourceTree = "<group>"; };
+		E58796A726680AC20026DD53 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E58B59EF265ED59A0016AD68 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		E5CD354D264D5020000E9BF6 /* JSON of Thrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JSON of Thrones.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CD3550264D5020000E9BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				E5CD354F264D5020000E9BF6 /* JSON of Thrones */,
+				E58796A726680AC20026DD53 /* README.md */,
 				E5CD354E264D5020000E9BF6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58796A826680AC20026DD53 /* README.md in Resources */,
 				E5CD355D264D5021000E9BF6 /* LaunchScreen.storyboard in Resources */,
 				E5CD355A264D5021000E9BF6 /* Assets.xcassets in Resources */,
 				E58796A4266809650026DD53 /* Screenshot01.png in Resources */,
