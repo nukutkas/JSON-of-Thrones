@@ -8,6 +8,8 @@
 import UIKit
 
 class CharacterTableViewController: UITableViewController {
+    
+    //MARK: Private properties
     private var characters: [Character] = []
     private let searchController = UISearchController(searchResultsController: nil)
     private var filteredCharacter: [Character] = []
@@ -80,8 +82,6 @@ extension CharacterTableViewController: UISearchResultsUpdating {
         filteredCharacter = characters.filter({ (character: Character) -> Bool in
             return character.fullName.lowercased().contains(searchText.lowercased())
         })
-        
         tableView.reloadData()
     }
-    
 }
