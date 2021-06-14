@@ -8,6 +8,8 @@
 import UIKit
 
 class CharacterDetailsViewController: UIViewController {
+    
+    // MARK: - IBOutlets
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var characterImageView: ImageView! {
         didSet {
@@ -19,6 +21,7 @@ class CharacterDetailsViewController: UIViewController {
     // MARK: - Public properties
     var character: Character!
     
+    //MARK: - Private properties
     private var spinnerView = UIActivityIndicatorView()
     
     override func viewDidLoad() {
