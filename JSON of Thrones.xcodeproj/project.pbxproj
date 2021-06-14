@@ -20,6 +20,8 @@
 		E5CD3566264D5096000E9BF6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD3565264D5096000E9BF6 /* Character.swift */; };
 		E5CD356F264D5A1D000E9BF6 /* CharacterTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD356E264D5A1D000E9BF6 /* CharacterTableViewController.swift */; };
 		E5CD3573264D7C86000E9BF6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CD3572264D7C86000E9BF6 /* NetworkManager.swift */; };
+		E5DB69FE2677A27F006EFD08 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB69FD2677A27F006EFD08 /* ImageView.swift */; };
+		E5DB6A012677A590006EFD08 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DB6A002677A590006EFD08 /* ImageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		E5CD3565264D5096000E9BF6 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		E5CD356E264D5A1D000E9BF6 /* CharacterTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewController.swift; sourceTree = "<group>"; };
 		E5CD3572264D7C86000E9BF6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E5DB69FD2677A27F006EFD08 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		E5DB6A002677A590006EFD08 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				E58B59EF265ED59A0016AD68 /* CharacterTableViewCell.swift */,
+				E5DB69FD2677A27F006EFD08 /* ImageView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				E5CD3572264D7C86000E9BF6 /* NetworkManager.swift */,
+				E5DB6A002677A590006EFD08 /* ImageManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -225,8 +231,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DB69FE2677A27F006EFD08 /* ImageView.swift in Sources */,
 				E58407E926656D6500B448BB /* CharacterDetailsViewController.swift in Sources */,
 				E5CD3551264D5020000E9BF6 /* AppDelegate.swift in Sources */,
+				E5DB6A012677A590006EFD08 /* ImageManager.swift in Sources */,
 				E5CD3553264D5020000E9BF6 /* SceneDelegate.swift in Sources */,
 				E5CD3573264D7C86000E9BF6 /* NetworkManager.swift in Sources */,
 				E5CD3566264D5096000E9BF6 /* Character.swift in Sources */,

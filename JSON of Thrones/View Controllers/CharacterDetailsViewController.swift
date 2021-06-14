@@ -9,7 +9,7 @@ import UIKit
 
 class CharacterDetailsViewController: UIViewController {
     @IBOutlet var descriptionLabel: UILabel!
-    @IBOutlet var characterImageView: UIImageView! {
+    @IBOutlet var characterImageView: ImageView! {
         didSet {
             characterImageView.contentMode = .scaleAspectFill
             characterImageView.layer.cornerRadius = characterImageView.frame.width / 2
@@ -34,12 +34,6 @@ class CharacterDetailsViewController: UIViewController {
     private func configure(_ character: Character) {
         title = character.fullName
         descriptionLabel.text = character.description
-        DispatchQueue.global().async {
-            guard let imageData = ImageManager.shared.fetchImage(from: self.character.imageUrl) else { return }
-            DispatchQueue.main.async {
-                self.characterImageView.image = UIImage(data: imageData)
-               // self.spinnerView.stopAnimating()
-            }
-        }
+        characterImageView.fetchImage(from: character.imageUrl)
     }
 }
