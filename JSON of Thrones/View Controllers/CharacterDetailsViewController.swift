@@ -27,9 +27,13 @@ class CharacterDetailsViewController: UIViewController {
         if let topItem = navigationController?.navigationBar.topItem {
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         }
+        configure(character)
+    }
+    
+    // MARK: - Private methods
+    private func configure(_ character: Character) {
         title = character.fullName
         descriptionLabel.text = character.description
-        
         DispatchQueue.global().async {
             guard let imageData = ImageManager.shared.fetchImage(from: self.character.imageUrl) else { return }
             DispatchQueue.main.async {

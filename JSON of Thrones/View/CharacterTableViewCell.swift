@@ -22,6 +22,7 @@ class CharacterTableViewCell: UITableViewCell {
     // MARK: - Public methods
     func configure(with character: Character?) {
         nameLabel.text = character?.fullName
+        characterImageView.image = nil
         DispatchQueue.global().async {
             guard let stringUrl = character?.imageUrl else { return }
             guard let imageUrl = URL(string: stringUrl) else { return }
