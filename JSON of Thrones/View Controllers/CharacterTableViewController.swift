@@ -32,7 +32,6 @@ class CharacterTableViewController: UITableViewController {
         isFiltering ? filteredCharacter.count : characters.count
     }
     
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as? CharacterTableViewCell else { return UITableViewCell() }
         let character = isFiltering ? filteredCharacter[indexPath.row] : characters[indexPath.row]
