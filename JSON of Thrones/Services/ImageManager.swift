@@ -13,7 +13,7 @@ class ImageManager {
     
     private init() {}
     
-    func getImage(from url: URL, completion: @escaping (Data, URLResponse) -> (Void)) {
+    func getImage(from url: URL, completion: @escaping (Data, URLResponse) -> Void) {
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error { print(error); return }
@@ -21,6 +21,6 @@ class ImageManager {
             guard let responseURL = response.url else { return }
             guard responseURL == url else { return }
             completion(data, response)
-        }
+        }.resume()
     }
 }

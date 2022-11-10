@@ -10,7 +10,7 @@ import UIKit
 class ImageView: UIImageView {
     
     func fetchImage(from url: String) {
-        guard let url = URL(string: url)else {
+        guard let url = URL(string: url) else {
             image = #imageLiteral(resourceName: "Ivan")
             return
         }
